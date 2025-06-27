@@ -1,15 +1,36 @@
 {
   "name": "@danakt/pshe",
   "version": "0.1.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "repository": "git+https://github.com/danakt/pshe.git",
   "author": "Danakt Frost",
   "license": "MIT",
   "bin": {
-    "пше": "./pshe"
+    "пше": "./bin/pshe.js",
+    "нфкт": "./bin/yarn.js",
+    "зтзь": "./bin/pnpm.js",
+    "тзь": "./bin/npm.js",
+    "игт": "./bin/bun.js"
   },
+  "files": [
+    "src",
+    "bin"
+  ],
   "bugs": {
     "url": "https://github.com/danakt/pshe/issues"
   },
-  "homepage": "https://пше.рф"
+  "engines": {
+    "node": "^20.0.0 || >=21.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "homepage": "https://пше.рф",
+  "devDependencies": {
+    "args-tokenizer": "^0.3.0"
+  },
+  "packageManager": "pnpm@10.7.1"
 }
