@@ -25,7 +25,7 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./src/index.js"
     }
   },
   "homepage": "https://пше.рф",
